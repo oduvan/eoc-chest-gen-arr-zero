@@ -1,15 +1,15 @@
 <p>
-	В этой миссии вы должны написать функцию, которая представит человека по переданным параметрам.
+	Сгенерируйте массив нулей переданного размера
 </p>
 
 
 
 <p>
-    <strong>Входные данные: </strong> Два аргумента строка(str) и положительное число(int)
+    <strong>Входные данные: </strong> Размер массива(int)
 </p>
 
 <p>
-    <strong>Output: </strong> Строка(str).
+    <strong>Output: </strong> Массив.
 </p>
 
 
@@ -20,12 +20,12 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sayHi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old"
-sayHi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old"
+<pre class="brush: javascript">genArrZero(0) == []
+genArrZero(1) == [0]
 </pre>
 {% else %}
-<pre class="brush: python">say_hi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old"
-say_hi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old"
+<pre class="brush: python">gen_arr_zero(0) == []
+gen_arr_zero(1) == [0]
 </pre>
 {% endif %}
 </div>

@@ -11,18 +11,22 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": ["Alex", 32],
-            "answer": "Hi. My name is Alex and I'm 32 years old"
+            "input": [0],
+            "answer": []
         },
         {
-            "input": ["Frank", 68],
-            "answer": "Hi. My name is Frank and I'm 68 years old"
+            "input": [1],
+            "answer": [0]
+        },
+        {
+            "input": [5],
+            "answer": [0, 0, 0, 0, 0]
         }
     ],
     "Extra": [
         {
-            "input": ["Pepe", 8],
-            "answer": "Hi. My name is Pepe and I'm 8 years old"
+            "input": [2],
+            "answer": [0, 0]
         }
     ]
 }

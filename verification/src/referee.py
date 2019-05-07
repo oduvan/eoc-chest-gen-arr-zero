@@ -12,8 +12,8 @@ class Referee(RefereeRank):
 
     DEFAULT_FUNCTION_NAME = "say_hi"
     FUNCTION_NAMES = {
-        "python_3": "say_hi",
-        "js_node": "sayHi"
+        "python_3": "gen_arr_zero",
+        "js_node": "genArrZero"
     }
     ENV_COVERCODE = {
         ENV_NAME.PYTHON: covercodes.py_unwrap_args,

@@ -1,15 +1,15 @@
 <p>
-	In this mission you should write a function that introduces a person with the given parameters in attributes.
+	Generate {% if interpreter.slug == "js-node" %}an Array{% else %}a list{% endif %} of zeros (0) of given size
 </p>
 
 
 
 <p>
-    <strong>Input: </strong> Two arguments. String and positive integer.
+    <strong>Input: </strong> Size as Int.
 </p>
 
 <p>
-    <strong>Output: </strong> String.
+    <strong>Output: </strong> {% if interpreter.slug == "js-node" %}an Array{% else %}a list{% endif %}.
 </p>
 
 
@@ -20,12 +20,12 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sayHi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old"
-sayHi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old"
+<pre class="brush: javascript">genArrZero(0) == []
+genArrZero(1) == [0]
 </pre>
 {% else %}
-<pre class="brush: python">say_hi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old"
-say_hi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old"
+<pre class="brush: python">gen_arr_zero(0) == []
+gen_arr_zero(1) == [0]
 </pre>
 {% endif %}
 </div>
