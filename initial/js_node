@@ -1,21 +1,18 @@
-"use strict";
 
-function genArrZero(a) {
-
+export function genArrZero(num: number) {
     // your code here
     return undefined;
 }
 
-var assert = require('assert');
-if (!global.is_checking) {
-    console.log('Example:');
-    console.log(genArrZero(0));
+import * as assert from 'assert';
 
-    // These "asserts" are used for self-checking and not for an auto-testing
-    assert.deepEqual(genArrZero(0), []);
-    assert.deepEqual(genArrZero(1), [0]);
-    assert.deepEqual(genArrZero(5), [0, 0, 0, 0, 0]);
+console.log('Example:');
+console.log(genArrZero(0));
 
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+// These "asserts" are used for self-checking and not for an auto-testing
+assert.deepEqual(genArrZero(0), []);
+assert.deepEqual(genArrZero(1), [0]);
+assert.deepEqual(genArrZero(5), [0, 0, 0, 0, 0]);
+
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
